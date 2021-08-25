@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Main Page</title>
+    </head>
+    <body>
+        <h1>Main Page</h1>
+        <h3>NG: {{ng_num}}</h3>
+        <table>
+                    <form method="GET" action="/infer" id="light">
+                    <tr>
+                        <th>
+                        <label for="Blue Light">Blue Light On</label>
+                        <input type="radio" name="isBlue" value="True" checked="checked">
+                        <label for="Blue Light">Blue Light Off</label>
+                        <input type="radio" name="isBlue" value="False">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <label for="Back Light">Back Light On</label>
+                        <input type="radio" name="isBack" value="True"  checked="checked">
+                        <label for="Back Light">Back Light Off</label>
+                        <input type="radio" name="isBack" value="False">
+                        </th>   
+                    </tr>
+                    </form>
+                </table>
+            <button form="light">Start Inspection</button>
+            <button form="light">Start Save Img</button>
+            <a href="/disply-result"><button>Display Result</button></a>
+    </body>
+</html>
